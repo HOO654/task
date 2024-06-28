@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aya's Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Aya's Tasks</div>
+        <button class="btn" onclick="showLogin()">Enter</button>
+    </div>
+
+    <div id="admin-login">
+        <h2>Please Login</h2>
+        <input type="password" id="admin-password" placeholder="Enter password">
+        <button class="btn" onclick="login()">Login</button>
+    </div>
+
+    <div id="tasks-page" class="table-container" style="display: none;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Link</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody id="task-body">
+                <!-- Rows will be added by JavaScript -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" id="total">Total: 0%</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
